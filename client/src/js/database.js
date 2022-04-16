@@ -26,7 +26,7 @@ export const postDb = async (name, home, cell, email) => {
 };
 
 // TODO: Complete the getDb() function below:
-export const getAllDb = async () => {
+export const getDb = async () => {
   console.log("GET all from the database");
   const contactDb = await openDB("contact", 1);
   const tx = contactDb.transaction("contact", "readonly");
